@@ -9,13 +9,10 @@ function toggleMode() {
     profileImage.setAttribute("src", "./assets/avatar-light.png")
     profileImage.setAttribute(
       "alt",
-      "foto do mayk brito sorrindo, usando óculos preto e jaqueta cinza, com fundo roxo"
+      "foto do léo, com uma parede branca de fundo"
     )
   } else {
     profileImage.setAttribute("src", "./assets/avatar.png")
-    profileImage.setAttribute(
-      "alt",
-      "foto do mayk brito sorrindo, usando óculos e camisa preta, com fundo amarelo"
-    )
+    profileImage.setAttribute("alt", "foto do léo, com cores invertidas")
   }
 }
