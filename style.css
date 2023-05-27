@@ -95,6 +95,12 @@ body * {
   cursor: pointer;
   border: 0;
   border-radius: 50%;
+
+  animation: slide-back 0.2s;
+}
+
+.switch button:hover {
+  outline: 8px solid var(--social-links-hover);
 }
 
 .switch span {
@@ -111,8 +117,7 @@ body * {
 }
 
 .light .switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
 }
 
 /* Botões Links */
@@ -190,5 +195,25 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animations */
+
+@keyframes slide-in {
+  from {
+    left: 2%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 2%;
   }
 }
